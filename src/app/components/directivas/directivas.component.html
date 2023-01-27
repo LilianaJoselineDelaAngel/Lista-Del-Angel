@@ -1,0 +1,21 @@
+<div class="contenido">
+  <h1>Lista de alumnos </h1>
+  <h2 style="color: blue;">{{tema}}</h2>
+  <span class="total">Total de alumnos postulados: {{ lista.length}} </span>
+  <ul>
+    <!--directivas estructurales-->
+    <li *ngFor="let alumnos of lista">
+      <!--directiva de atributo-->
+      <span [ngClass]="alumnos.inscrito === true ? 'Inscrito': 'NoInscrito'">{{alumnos.nombre | uppercase}}</span><br />
+
+      <label>{{alumnos.carrera}}</label>
+      <p class="descripcion">{{alumnos.descripcion}}</p>
+      <!--directivas estructurales-->
+      <label>Su promedio es: {{alumnos.promedio | number}} <span *ngIf="alumnos.promedio >= 8" class="beca"> Candidato
+          parab beca
+          :D</span></label>
+
+      <hr>
+    </li>
+  </ul>
+</div>

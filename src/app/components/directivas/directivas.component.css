@@ -1,0 +1,22 @@
+.Inscrito {
+  color: green;
+}
+.NoInscrito {
+  color: red;
+}
+.beca {
+  color: rgb(3, 57, 122);
+}
+.descripcion {
+  color: gray;
+  text-align: justify;
+}
+
+.contenido {
+  padding: 50px 50px;
+  background-color: #ffffee;
+}
+
+.total {
+  font-weight: bold;
+}
